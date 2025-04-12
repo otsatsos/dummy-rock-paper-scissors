@@ -5,23 +5,36 @@
 }
 
 body {
-    background-color:#2f4f4f;
+    background-color:#436666;
     color: white;
 }
+
+details{
+    margin: 20px;
+    padding: 10px;
+    max-width: 400px;
+    border: 5px solid #607E7E;
+    border-radius: 10px;
+    background-color: white;
+    color: #2f4f4f;
+}
+
+details[open] summary{
+    color:#672E2E;
+}
+
+p{
+    margin: 10px 0;
+    font-size: 15px;
+    font-weight: 200;
+}
+
 
 #game{
     margin: 20px 10px;
     padding: 10px 0;
     text-align: center;
     border: 2px solid white;
-    border-radius: 10px;
-}
-
-#rules-btn{
-    margin: 20px;
-    height:40px;
-    width: 400px;
-    border: 5px solid #6F788D;
     border-radius: 10px;
 }
 
@@ -42,13 +55,31 @@ body {
 
 #all-option-buttons{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 20px;
-    align-items: center;
+    padding: 10px 0;
 }
 
 .option-button{
-    padding: 1px 10px;
-    background-color:khaki;
-    border: 1px solid black;
+    width: 100px;
+    height: 30px;
+    background-image:linear-gradient(to bottom right,#D3C2A1,#AA9770);
+    color: #0E3232;
+    font-weight: bold;
+    font-size: 16px;
+    border: 1px solid #0E3232;
+    border-radius: 10px;
+}
+
+#reset-button{
+    width: 100px;
+    height: 30px;
+    background-image:linear-gradient(to bottom right,#D3A1A1,#AA7070);
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+    border: 1px solid #0E3232;
+    border-radius: 10px;
 }
 

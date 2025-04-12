@@ -10,7 +10,16 @@
         <div id="game">
             <div id="welcome">
                 <h1>Let's play Rock, Paper, Scissors!</h1>
-                <button id="rules-btn" type="button">Rules to the game</button>
+                <details id="game-details">
+                    <summary>Rules to the game</summary>
+                    <p>You will be playing against the computer.</p>
+                    <p>You can choose between Rock, Paper, and Scissors.</p>
+                    <p>The first one to three points wins.</p>
+                    <p>Here are the rules to getting a point in the game:</p>
+                    <p>> Rock beats Scissors<br>> Scissors beats Paper<br>> Paper beats Rock</p>
+                    <p>If the player and computer choose the same option (Ex. Paper and Paper), then no one gets the point.</p>
+
+                </details>
             </div>
             <div id="score">
                 <div id="player-score">Player Score: <strong><span id="player-score-number">0</span></strong></div>
@@ -25,9 +34,13 @@
                 </div>
             </div>
             <div id="round-results">
-                <p id="hidden"></p>
+                <p id="round-results-msg"></p>
+            </div>
+            <div id="game-results">
+                <p id="game-results-msg"></p>
+                <button id="reset-button" type="button">Play Again</button>
             </div>
         </div>
-        <scrip src="script.js"></scrip>
+        <script src="script.js"></script>
     </body>
 </html>
