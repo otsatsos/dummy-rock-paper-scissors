@@ -10,7 +10,7 @@ body {
 }
 
 details{
-    margin: 20px;
+    margin: 20px auto;
     padding: 10px;
     max-width: 400px;
     border: 5px solid #607E7E;
@@ -72,6 +72,19 @@ p{
     border-radius: 10px;
 }
 
+#game-results{
+    background-color: white;
+    color: #0E3232;
+    border: 1px solid;
+    margin: 10px;
+    border-radius: 10px;
+    display: none;
+}
+
+#game-results-msg{
+    font-weight: bold;
+}
+
 #reset-button{
     width: 100px;
     height: 30px;
@@ -81,5 +94,9 @@ p{
     font-size: 16px;
     border: 1px solid #0E3232;
     border-radius: 10px;
+    display: none;
+    margin: 10px auto;
 }
+
+
 
